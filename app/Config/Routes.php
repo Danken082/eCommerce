@@ -7,3 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/nice', 'MainController::nice');
+$routes->get('signup', 'UserController::dan');
+$routes->post('register', 'UserController::register');

@@ -18,21 +18,24 @@
                     <?php endif;?>
                     <form action="/register" method = "post">
                         <div class="form-group mb-3">
-                            <input type="text" name ="name" placeholder ="name"  class = "form-control">
+                            <input type="text" name ="name" placeholder ="name"  class = "form-control" required>
                         </div>
                         <div class="form-group mb-3">
-                            <input type="text" name ="username" placeholder ="email" class = "form-control">
+                            <input type="text" name ="username" placeholder ="email" class = "form-control" required>
                         </div>
                         <div class="form-group mb-3">
-                            <input type="password" name ="password" placeholder ="password" class = "form-control">
+                            <input type="password" name ="password" placeholder ="password" class = "form-control"required> 
                         </div>
                         <div class="form-group mb-3">
-                            <input type="password" name ="confirmpassword" placeholder ="confirm password" class = "form-control">
+                            <input type="password" name ="confirmpassword" placeholder ="confirm password" class = "form-control" required>
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-dark">SignUp</button>
                         </div>
                 </form>
+                    <div class="d-grid">
+                        <p>I have account <a href="/signin">Sign In</a></p>
+                    </div>
             </div>
         </div>
     </div>

@@ -44,7 +44,7 @@ class UserController extends BaseController
             echo view('register', $data);
         }
     }
-    public function logins()
+    public function login()
     {
         $session = session();
         $username = $this->request->getVar('username');
@@ -66,7 +66,7 @@ class UserController extends BaseController
                 return redirect()->to('signin');
             }
             else
-            {
+            {   
                 $session->setFlashdata('msg', 'password is incorrect.');
                 return redirect()->to('signin');
             }
@@ -78,14 +78,24 @@ class UserController extends BaseController
             return redirect()->to('signin');
         }
     }
-    public function dan()
-    {
-        if($this->logins()){
-        $users = new UserModel();
-        $data['users'] = $users->findAll();
-        return view('login');
+        public function signUp()
+        {
+        
+            // $users = new UserModel();
+            $data['users'] = $this->users->findAll();
+            return view('register', $data);
+            
+        
         }
-       
-    }
+
+        public function singIn()
+        {
+        
+            // $users = new UserModel();
+            $data['users'] = $this->users->findAll();
+            return view('login', $data);
+            
+        
+        }
 
 }

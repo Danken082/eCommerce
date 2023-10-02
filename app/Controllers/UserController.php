@@ -44,16 +44,19 @@ class UserController extends BaseController
             echo view('register', $data);
         }
     }
-    public function login()
+    
+    public function loginAuth()
     {
         $session = session();
         $username = $this->request->getVar('username');
-        $password = $this->request->getVar('password');
+        $password = $this->request->getVar('name');
+        // echo "Username: " . $username . "<br>";
+        // echo "Password: " . $password . "<br>";
         $data = $this->users->where('username', $username)->first();
         if($data)
         {
-            $pass = $data['password'];
-            $authenticatePassword = $password_verify($password, $pass);
+            $pass = $data['name'];
+            $authenticatePassword = password_verify($password, $pass);
             if($authenticatePassword)
             {
                 $ses_data = 
@@ -63,7 +66,7 @@ class UserController extends BaseController
                     'isLoggedin' => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('signin');
+                return redirect()->to('signup');
             }
             else
             {   
@@ -72,11 +75,14 @@ class UserController extends BaseController
             }
            
         }
+       
         else
         {
             $session->setFlashdata('msg', 'Email does not exist.');
             return redirect()->to('signin');
         }
+        
+        
     }
         public function signUp()
         {
@@ -88,14 +94,13 @@ class UserController extends BaseController
         
         }
 
-        public function singIn()
+        public function signIn()
         {
         
-            // $users = new UserModel();
-            $data['users'] = $this->users->findAll();
-            return view('login', $data);
-            
+            helper(['form']);
+            echo view('login');
         
         }
+        
 
 }

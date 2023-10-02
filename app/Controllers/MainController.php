@@ -15,4 +15,21 @@ class MainController extends BaseController
     {
         return view('view');
     }
+    public function fasion()
+    {
+
+        return view ('fasion');
+
+    }
+    public function electronic()
+    {
+        
+        return view ('electronic');
+
+    }
+    public function jewelry()
+    {
+        return view ('jewelry');
+
+    }
 }

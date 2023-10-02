@@ -1,0 +1,138 @@
+CRITICAL - 2023-10-01 11:01:31 --> Undefined variable $password_verify
+in APPPATH\Controllers\UserController.php on line 56.
+ 1 APPPATH\Controllers\UserController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password_verify', 'C:\\laragon\\www\\eCommerce\\app\\Controllers\\UserController.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:02:15 --> Call to undefined function dan123()
+in APPPATH\Controllers\UserController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:02:17 --> Call to undefined function dan123()
+in APPPATH\Controllers\UserController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:02:33 --> Undefined variable $password_verify
+in APPPATH\Controllers\UserController.php on line 56.
+ 1 APPPATH\Controllers\UserController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password_verify', 'C:\\laragon\\www\\eCommerce\\app\\Controllers\\UserController.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:05:33 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\UserController.php on line 101.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\eCommerce\\app\\Controllers\\UserController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\UserController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:05:51 --> Undefined variable $password_verify
+in APPPATH\Controllers\UserController.php on line 57.
+ 1 APPPATH\Controllers\UserController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password_verify', 'C:\\laragon\\www\\eCommerce\\app\\Controllers\\UserController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:16:03 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\UserController.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-01 11:20:00 --> syntax error, unexpected double-quoted string " class = ", expecting "," or ";"
+in APPPATH\Views\login.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\UserController.php(99): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->singIn()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:20:09 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Views\login.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\UserController.php(99): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->singIn()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:58:12 --> Undefined constant "App\Controllers\username"
+in APPPATH\Controllers\UserController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 11:58:26 --> Undefined constant "App\Controllers\username"
+in APPPATH\Controllers\UserController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 12:10:39 --> Cannot redeclare App\Controllers\UserController::index()
+in APPPATH\Controllers\UserController.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-01 12:11:21 --> Undefined variable $userModel
+in APPPATH\Controllers\UserController.php on line 57.
+ 1 APPPATH\Controllers\UserController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\laragon\\www\\eCommerce\\app\\Controllers\\UserController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 12:25:12 --> Cannot access offset of type string on string
+in APPPATH\Controllers\UserController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 12:25:23 --> Cannot access offset of type string on string
+in APPPATH\Controllers\UserController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 12:25:34 --> Undefined variable $pass
+in APPPATH\Controllers\UserController.php on line 57.
+ 1 APPPATH\Controllers\UserController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pass', 'C:\\laragon\\www\\eCommerce\\app\\Controllers\\UserController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 12:52:26 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\view.php on line 92.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('view', [], true)
+ 3 APPPATH\Controllers\MainController.php(16): view('view')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->nice()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-01 13:04:19 --> syntax error, unexpected identifier "section", expecting "->" or "?->" or "{" or "["
+in APPPATH\Views\view.php on line 93.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('view', [], true)
+ 3 APPPATH\Controllers\MainController.php(16): view('view')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->nice()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')

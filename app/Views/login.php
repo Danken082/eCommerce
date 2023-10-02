@@ -16,12 +16,13 @@
                             <?= session()->getFlashdata('msg')?>
                         </div>
                         <?php endif;?>
-                        <form action="" method="post">
+      
+                        <form action="<?php base_url()?>UserController/login" method="post">
                             <div class ="form-group mb-3">
-                                <input type="email" name ="username" placeholder="email" class = "form-control">
+                                <input type="email" name ="username" placeholder="email" value ="<?=  set_value("username")?>" class = "form-control" >
                             </div>
                             <div class ="form-group mb-3">
-                                <input type="password" name ="password" placeholder="password" class = "form-control">
+                                <input type="password" name ="name" placeholder="password" class = "form-control" >
                             </div>
                             <div class="d-grid">
                                 <button type = "submit" class ="btn btn-success">SignIn</button>

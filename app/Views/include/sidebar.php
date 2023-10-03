@@ -14,7 +14,7 @@
                <div class="containt_main">
                   <div id="mySidenav" class="sidenav">
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <a href="/nice">Home</a>
+                     <a href="/view">Home</a>
                      <a href="/fasion">Fashion</a>
                      <a href="/electronic">Electronic</a>
                      <a href="/jewelry">Jewellery</a>

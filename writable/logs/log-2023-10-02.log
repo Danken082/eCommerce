@@ -48,3 +48,578 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
  6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 04:22:47 --> syntax error, unexpected token "(", expecting "," or ";"
+in APPPATH\Controllers\SigninController.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\eCommerce\\app\\Controllers\\SigninController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SigninController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SigninController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\SigninController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 04:29:23 --> Cannot redeclare App\Controllers\UserController::index()
+in APPPATH\Controllers\UserController.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-10-02 04:43:09 --> Error: Class "App\Filters\authGuard" not found in C:\laragon\www\eCommerce\system\Config\Factories.php:215
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Filters', Array)
+#1 C:\laragon\www\eCommerce\system\Common.php(217): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#2 C:\laragon\www\eCommerce\system\Config\Services.php(290): config('Config\\Filters')
+#3 C:\laragon\www\eCommerce\system\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(NULL, false)
+#4 C:\laragon\www\eCommerce\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#5 C:\laragon\www\eCommerce\system\Config\Services.php(287): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#6 C:\laragon\www\eCommerce\system\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+#7 C:\laragon\www\eCommerce\system\Common.php(1022): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#8 C:\laragon\www\eCommerce\system\View\View.php(255): service('filters')
+#9 C:\laragon\www\eCommerce\system\Common.php(1188): CodeIgniter\View\View->render('CodeIgniter\\Com...', Array, true)
+#10 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(271): view('CodeIgniter\\Com...', Array, Array)
+#11 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\FilterGenerator->renderTemplate(Array)
+#12 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(205): CodeIgniter\Commands\Generators\FilterGenerator->parseTemplate('App\\Filters\\Aut...')
+#13 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\FilterGenerator->prepare('App\\Filters\\Aut...')
+#14 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\FilterGenerator->buildContent('App\\Filters\\Aut...')
+#15 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\FilterGenerator->generateClass(Array)
+#16 C:\laragon\www\eCommerce\system\Commands\Generators\FilterGenerator.php(82): CodeIgniter\Commands\Generators\FilterGenerator->execute(Array)
+#17 C:\laragon\www\eCommerce\system\CLI\Commands.php(65): CodeIgniter\Commands\Generators\FilterGenerator->run(Array)
+#18 C:\laragon\www\eCommerce\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('make:filter', Array)
+#19 C:\laragon\www\eCommerce\spark(102): CodeIgniter\CLI\Console->run()
+#20 {main}
+CRITICAL - 2023-10-02 04:43:09 --> Class "App\Filters\authGuard" not found
+in SYSTEMPATH\Config\Factories.php on line 215.
+ 1 SYSTEMPATH\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Filters', [])
+ 2 SYSTEMPATH\Common.php(217): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 3 SYSTEMPATH\Config\Services.php(290): config('Config\\Filters')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(null, false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 6 SYSTEMPATH\Config\Services.php(287): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+ 8 SYSTEMPATH\Common.php(1022): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 9 SYSTEMPATH\View\View.php(255): service('filters')
+10 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('CodeIgniter\\Commands\\Generators\\Views\\filter.tpl.php', [...], true)
+11 SYSTEMPATH\CLI\GeneratorTrait.php(275): view('CodeIgniter\\Commands\\Generators\\Views\\filter.tpl.php', [], [...])
+12 SYSTEMPATH\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\FilterGenerator->renderTemplate([])
+13 SYSTEMPATH\CLI\GeneratorTrait.php(205): CodeIgniter\Commands\Generators\FilterGenerator->parseTemplate('App\\Filters\\AuthGuard')
+14 SYSTEMPATH\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\FilterGenerator->prepare('App\\Filters\\AuthGuard')
+15 SYSTEMPATH\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\FilterGenerator->buildContent('App\\Filters\\AuthGuard')
+16 SYSTEMPATH\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\FilterGenerator->generateClass([...])
+17 SYSTEMPATH\Commands\Generators\FilterGenerator.php(82): CodeIgniter\Commands\Generators\FilterGenerator->execute([...])
+18 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Generators\FilterGenerator->run([...])
+19 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('make:filter', [...])
+20 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-02 04:44:45 --> Error: Class "App\Filters\authGuard" not found in C:\laragon\www\eCommerce\system\Config\Factories.php:215
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Filters', Array)
+#1 C:\laragon\www\eCommerce\system\Common.php(217): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#2 C:\laragon\www\eCommerce\system\Config\Services.php(290): config('Config\\Filters')
+#3 C:\laragon\www\eCommerce\system\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(NULL, false)
+#4 C:\laragon\www\eCommerce\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#5 C:\laragon\www\eCommerce\system\Config\Services.php(287): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#6 C:\laragon\www\eCommerce\system\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+#7 C:\laragon\www\eCommerce\system\Common.php(1022): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#8 C:\laragon\www\eCommerce\system\View\View.php(255): service('filters')
+#9 C:\laragon\www\eCommerce\system\Common.php(1188): CodeIgniter\View\View->render('CodeIgniter\\Com...', Array, true)
+#10 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(271): view('CodeIgniter\\Com...', Array, Array)
+#11 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\FilterGenerator->renderTemplate(Array)
+#12 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(205): CodeIgniter\Commands\Generators\FilterGenerator->parseTemplate('App\\Filters\\Aut...')
+#13 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\FilterGenerator->prepare('App\\Filters\\Aut...')
+#14 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\FilterGenerator->buildContent('App\\Filters\\Aut...')
+#15 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\FilterGenerator->generateClass(Array)
+#16 C:\laragon\www\eCommerce\system\Commands\Generators\FilterGenerator.php(82): CodeIgniter\Commands\Generators\FilterGenerator->execute(Array)
+#17 C:\laragon\www\eCommerce\system\CLI\Commands.php(65): CodeIgniter\Commands\Generators\FilterGenerator->run(Array)
+#18 C:\laragon\www\eCommerce\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('make:filter', Array)
+#19 C:\laragon\www\eCommerce\spark(102): CodeIgniter\CLI\Console->run()
+#20 {main}
+CRITICAL - 2023-10-02 04:44:45 --> Class "App\Filters\authGuard" not found
+in SYSTEMPATH\Config\Factories.php on line 215.
+ 1 SYSTEMPATH\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Filters', [])
+ 2 SYSTEMPATH\Common.php(217): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 3 SYSTEMPATH\Config\Services.php(290): config('Config\\Filters')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(null, false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 6 SYSTEMPATH\Config\Services.php(287): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+ 8 SYSTEMPATH\Common.php(1022): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 9 SYSTEMPATH\View\View.php(255): service('filters')
+10 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('CodeIgniter\\Commands\\Generators\\Views\\filter.tpl.php', [...], true)
+11 SYSTEMPATH\CLI\GeneratorTrait.php(275): view('CodeIgniter\\Commands\\Generators\\Views\\filter.tpl.php', [], [...])
+12 SYSTEMPATH\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\FilterGenerator->renderTemplate([])
+13 SYSTEMPATH\CLI\GeneratorTrait.php(205): CodeIgniter\Commands\Generators\FilterGenerator->parseTemplate('App\\Filters\\AuthGuard')
+14 SYSTEMPATH\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\FilterGenerator->prepare('App\\Filters\\AuthGuard')
+15 SYSTEMPATH\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\FilterGenerator->buildContent('App\\Filters\\AuthGuard')
+16 SYSTEMPATH\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\FilterGenerator->generateClass([...])
+17 SYSTEMPATH\Commands\Generators\FilterGenerator.php(82): CodeIgniter\Commands\Generators\FilterGenerator->execute([...])
+18 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Generators\FilterGenerator->run([...])
+19 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('make:filter', [...])
+20 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-02 04:48:17 --> Error: Class "App\Filters\authGuard" not found in C:\laragon\www\eCommerce\system\Config\Factories.php:215
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Filters', Array)
+#1 C:\laragon\www\eCommerce\system\Common.php(217): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#2 C:\laragon\www\eCommerce\system\Config\Services.php(290): config('Config\\Filters')
+#3 C:\laragon\www\eCommerce\system\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(NULL, false)
+#4 C:\laragon\www\eCommerce\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#5 C:\laragon\www\eCommerce\system\Config\Services.php(287): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#6 C:\laragon\www\eCommerce\system\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+#7 C:\laragon\www\eCommerce\system\Common.php(1022): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#8 C:\laragon\www\eCommerce\system\View\View.php(255): service('filters')
+#9 C:\laragon\www\eCommerce\system\Common.php(1188): CodeIgniter\View\View->render('CodeIgniter\\Com...', Array, true)
+#10 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(271): view('CodeIgniter\\Com...', Array, Array)
+#11 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\FilterGenerator->renderTemplate(Array)
+#12 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(205): CodeIgniter\Commands\Generators\FilterGenerator->parseTemplate('App\\Filters\\Aut...')
+#13 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\FilterGenerator->prepare('App\\Filters\\Aut...')
+#14 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\FilterGenerator->buildContent('App\\Filters\\Aut...')
+#15 C:\laragon\www\eCommerce\system\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\FilterGenerator->generateClass(Array)
+#16 C:\laragon\www\eCommerce\system\Commands\Generators\FilterGenerator.php(82): CodeIgniter\Commands\Generators\FilterGenerator->execute(Array)
+#17 C:\laragon\www\eCommerce\system\CLI\Commands.php(65): CodeIgniter\Commands\Generators\FilterGenerator->run(Array)
+#18 C:\laragon\www\eCommerce\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('make:filter', Array)
+#19 C:\laragon\www\eCommerce\spark(102): CodeIgniter\CLI\Console->run()
+#20 {main}
+CRITICAL - 2023-10-02 04:48:17 --> Class "App\Filters\authGuard" not found
+in SYSTEMPATH\Config\Factories.php on line 215.
+ 1 SYSTEMPATH\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Filters', [])
+ 2 SYSTEMPATH\Common.php(217): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 3 SYSTEMPATH\Config\Services.php(290): config('Config\\Filters')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(null, false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 6 SYSTEMPATH\Config\Services.php(287): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+ 8 SYSTEMPATH\Common.php(1022): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 9 SYSTEMPATH\View\View.php(255): service('filters')
+10 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('CodeIgniter\\Commands\\Generators\\Views\\filter.tpl.php', [...], true)
+11 SYSTEMPATH\CLI\GeneratorTrait.php(275): view('CodeIgniter\\Commands\\Generators\\Views\\filter.tpl.php', [], [...])
+12 SYSTEMPATH\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\FilterGenerator->renderTemplate([])
+13 SYSTEMPATH\CLI\GeneratorTrait.php(205): CodeIgniter\Commands\Generators\FilterGenerator->parseTemplate('App\\Filters\\AuthGuard')
+14 SYSTEMPATH\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\FilterGenerator->prepare('App\\Filters\\AuthGuard')
+15 SYSTEMPATH\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\FilterGenerator->buildContent('App\\Filters\\AuthGuard')
+16 SYSTEMPATH\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\FilterGenerator->generateClass([...])
+17 SYSTEMPATH\Commands\Generators\FilterGenerator.php(82): CodeIgniter\Commands\Generators\FilterGenerator->execute([...])
+18 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Generators\FilterGenerator->run([...])
+19 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('make:filter', [...])
+20 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-10-02 05:11:15 --> Invalid file: "signin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signin.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('signin', [], true)
+ 3 APPPATH\Controllers\SigninController.php(21): view('signin')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 05:11:27 --> Invalid file: "signin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signin.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('signin', [], true)
+ 3 APPPATH\Controllers\SigninController.php(21): view('signin')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:11:48 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\eCommerce\app\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+#8 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-02 05:11:48 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `logintbl`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:13:51 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\eCommerce\app\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+#8 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-02 05:13:51 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `logintbl`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:14:21 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\eCommerce\app\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+#8 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-02 05:14:21 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `logintbl`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:14:23 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\eCommerce\app\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+#8 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-02 05:14:23 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `logintbl`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:17:52 --> mysqli_sql_exception: Table 'ecomercedb.user' doesn't exist in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\eCommerce\app\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+#8 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-02 05:17:52 --> Table 'ecomercedb.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\SigninController.php(31): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 05:19:15 --> Unmatched '}'
+in APPPATH\Controllers\UserController.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\eCommerce\\app\\Controllers\\UserController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\UserController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 05:19:39 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\UserController.php(21): view('signup', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 05:28:53 --> Invalid file: "register.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\UserController.php(21): view('register', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:30:51 --> mysqli_sql_exception: Table 'ecomercedb.ecommercedb' doesn't exist in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('dan@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\eCommerce\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dan@gmail.com', Array, Array)
+#7 C:\laragon\www\eCommerce\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\eCommerce\app\Controllers\UserController.php(34): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\UserController->store()
+#10 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-10-02 05:30:51 --> Table 'ecomercedb.ecommercedb' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `ecommercedb`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('dan@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dan@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(34): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:31:26 --> mysqli_sql_exception: Table 'ecomercedb.ecommercedb' doesn't exist in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('dan@gmail.com', 'users', Array, NULL, 'email')
+#6 C:\laragon\www\eCommerce\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dan@gmail.com', Array, Array)
+#7 C:\laragon\www\eCommerce\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\eCommerce\app\Controllers\UserController.php(34): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\UserController->store()
+#10 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-10-02 05:31:26 --> Table 'ecomercedb.ecommercedb' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `ecommercedb`
+WHERE `users` = :users:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('dan@gmail.com', 'users', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dan@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(34): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:31:44 --> mysqli_sql_exception: Table 'ecomercedb.user' doesn't exist in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\eCommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\eCommerce\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\eCommerce\app\Controllers\UserController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\UserController->store()
+#10 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-10-02 05:31:44 --> Table 'ecomercedb.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `password`) VALUES (:email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(41): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:31:48 --> mysqli_sql_exception: Table 'ecomercedb.user' doesn't exist in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\eCommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\eCommerce\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\eCommerce\app\Controllers\UserController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\UserController->store()
+#10 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-10-02 05:31:48 --> Table 'ecomercedb.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `password`) VALUES (:email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(41): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:31:52 --> mysqli_sql_exception: Table 'ecomercedb.user' doesn't exist in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\eCommerce\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('dan@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\eCommerce\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dan@gmail.com', Array, Array)
+#7 C:\laragon\www\eCommerce\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\eCommerce\app\Controllers\UserController.php(34): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\UserController->store()
+#10 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-10-02 05:31:52 --> Table 'ecomercedb.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('dan@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dan@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(34): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+ERROR - 2023-10-02 05:32:39 --> mysqli_sql_exception: Table 'ecomercedb.user' doesn't exist in C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\eCommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\eCommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\eCommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\eCommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\eCommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\eCommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\eCommerce\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\eCommerce\app\Controllers\UserController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\eCommerce\system\CodeIgniter.php(919): App\Controllers\UserController->store()
+#10 C:\laragon\www\eCommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\eCommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\eCommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\eCommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-10-02 05:32:39 --> Table 'ecomercedb.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `password`) VALUES (:email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(41): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 05:33:34 --> Undefined array key "username"
+in APPPATH\Controllers\SigninController.php on line 40.
+ 1 APPPATH\Controllers\SigninController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\laragon\\www\\eCommerce\\app\\Controllers\\SigninController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 06:23:04 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\MainController.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\eCommerce\\app\\Controllers\\MainController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MainController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MainController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MainController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 06:23:23 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\eCommerce\\app\\Controllers\\MainController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MainController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MainController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MainController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 06:23:32 --> Class "App\Models\JelleweryModel" not found
+in APPPATH\Controllers\MainController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\MainController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')
+CRITICAL - 2023-10-02 06:24:37 --> Undefined property: App\Controllers\MainController::$jewellery
+in APPPATH\Controllers\MainController.php on line 26.
+ 1 APPPATH\Controllers\MainController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$jewellery', 'C:\\laragon\\www\\eCommerce\\app\\Controllers\\MainController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->nice()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eCommerce\\public\\index.php')

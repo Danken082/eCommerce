@@ -6,11 +6,11 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('/nice', 'MainController::nice');
+$routes->get('/view', 'MainController::nice');
 $routes->get('signup', 'UserController::signUp');
-$routes->post('register', 'UserController::register');
-$routes->post('/UserController/login', 'UserController::loginAuth');
-$routes->get('signin', 'UserController::signIn');
+$routes->match(['get','post'],'/UserController/store', 'UserController::store');
+$routes->match(['get', 'post'],'/SigninController/loginAuth', 'SigninController::loginAuth');
+$routes->get('/signin', 'SigninController::index');
 $routes->get('/fasion', 'MainController::fasion');
 $routes->get('/electronic', 'MainController::electronic');
 $routes->get('/jewelry', 'MainController::jewelry');
